@@ -1,29 +1,22 @@
 # SoroEngine
 
-> A small 2D game engine for the web.
+A tiny 2D canvas engine starter.
 
-An educational JavaScript 2D engine focused on a predictable game loop, scenes, entities, input handling, and canvas rendering.
+## Features
+- Animation-frame game loop
+- Delta-time player movement
+- Keyboard input manager
+- Canvas scene rendering
 
-## Technology
+## Run
+Open `index.html` in a modern browser. Move with WASD or arrow keys.
 
-JavaScript and HTML Canvas.
+## Scope
+This is an educational starter, not a complete physics engine. Collision systems, asset pipelines and scene tooling can be added in later milestones.
 
-## Roadmap
-
-- [ ] Engine loop
-- [ ] Scene lifecycle
-- [ ] Entity/component basics
-- [ ] Keyboard input
-- [ ] Example game
-
-## Project status
-
-Early development. Features are added incrementally and documented as they become available.
-
-## Contributing
-
-Issues and focused pull requests are welcome. Please describe the problem, expected behavior, and steps to reproduce bugs.
+## Structure
+- `index.html` — engine classes and playable demo
+- `README.md` — project documentation
 
 ## License
-
-No license has been selected yet. Until a license is added, all rights are reserved by the copyright holder.
+No license selected. All rights reserved until a license is added.
