@@ -1,22 +1,22 @@
 # SoroEngine
 
-A tiny 2D canvas engine starter.
+A tiny 2D canvas game-loop experiment with a movable player.
 
-## Features
-- Animation-frame game loop
-- Delta-time player movement
-- Keyboard input manager
-- Canvas scene rendering
+## Current features
+- Frame-rate-independent movement.
+- WASD and arrow-key controls.
+- Normalized diagonal movement.
+- Pause, resume, and reset.
+- Frame-rate display.
+
+## Stack
+HTML, CSS, Vanilla JavaScript, Canvas API, requestAnimationFrame.
 
 ## Run
-Open `index.html` in a modern browser. Move with WASD or arrow keys.
+Open `index.html` through a local static web server.
 
-## Scope
-This is an educational starter, not a complete physics engine. Collision systems, asset pipelines and scene tooling can be added in later milestones.
+## Important limitations
+This is an engine starter, not a complete game editor or physics engine. There is no collision system, level format, audio engine, or asset pipeline yet.
 
-## Structure
-- `index.html` — engine classes and playable demo
-- `README.md` — project documentation
-
-## License
-No license selected. All rights reserved until a license is added.
+## Roadmap
+Collision primitives, camera, entity system, level editor, asset loading, and sample game.
