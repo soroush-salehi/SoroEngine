@@ -38,9 +38,13 @@ class Engine {
   ctx.fillStyle="#fff";ctx.font="13px system-ui";ctx.fillText("WASD / ARROWS · MOVE",18,24);
  }
  reset(){this.player=new Player();}
+ pause(){this.running=false;cancelAnimationFrame(this.frame);}
+ resume(){if(this.running)return;this.running=true;this.last=0;this.frame=requestAnimationFrame(this.loop);}
  destroy(){this.running=false;cancelAnimationFrame(this.frame);}
 }
 const canvas=document.querySelector("#game");
 const engine=new Engine(canvas);
 document.querySelector("#reset").addEventListener("click",()=>engine.reset());
+const pauseButton=document.querySelector("#pause");
+pauseButton.addEventListener("click",()=>{if(engine.running){engine.pause();pauseButton.textContent="Resume";}else{engine.resume();pauseButton.textContent="Pause";}});
 window.addEventListener("beforeunload",()=>engine.destroy());
